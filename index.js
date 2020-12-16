@@ -16,7 +16,7 @@
 
 
 const calculateBill = (price, vat, tip) => {
-    if (typeof(price) === "number" && typeof(vat) === "number" && typeof(tip)) {
+    if (typeof(price) === "number" && typeof(vat) === "number" && typeof(tip) === "number") {
         let bill = price + (price * vat / 100) + tip;
         return "£" + bill;
     } else {
